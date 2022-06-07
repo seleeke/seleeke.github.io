@@ -36,16 +36,17 @@
     <main>
       <!-- PAGE HEADER SECTION -->
       <h1>
-      <p>Seleeke Flingai,</p>
-      <p>Social researcher and data curator,</p>
-      <p>Philadelphia, Pennsylvania</p>
+      Seleeke Flingai,
+      <br>Social researcher and data curator,
+      <br>Philadelphia, Pennsylvania
     </h1>
 
       <!-- ABOUT SECTION -->
       <button type="button" class="navButton" onclick="menuOpenClose('aboutContent')"><i class="fa-solid fa-plus"></i>About</button>
 
       <section class="subContent closed" id="aboutContent">
-        <img id="headshot" src="images/headshot_fixed.jpg" align="right">
+
+        <img id="headshot" src="images/headshot_fixed.jpg" alt="Seleeke Flingai headshot">
         <p><b>I am a researcher working at the intersection of data, social policy, and justice.</b> Currently, I am a senior research associate with the <a href="https://www.vera.org/people/seleeke-flingai" target="_blank">Reshaping Prosecution</a> program at the <a href="https://www.vera.org/" target="_blank">Vera Institute of Justice</a>. In my research, I use quantitative methods to describe how the criminal legal system in general, and prosecution in particular, have maintained or exacerbated racial inequality in American society. </p>
         <p>Before joining Vera, I worked as a research analyst at the <a href="https://www.mapc.org/" target="_blank">Metropolitan Area Planning Council</a> (MAPC), the planning agency of the Greater Boston region. At MAPC, I used quantitative and spatial data to investigate the various manifestations of racialized inequities in the Greater Boston region, with a focus on <a href="https://metrocommon.mapc.org/reports/21" target="_blank">residential displacement</a>, <a href="https://housing-submarkets.mapc.org/submarkets" target="_blank">housing markets</a>, and <a href="https://climate-vulnerability.mapc.org/" target="_blank">social vulnerability</a>. </p>
         <p>Ultimately, I am interested in the relationship between carceral spaces, the built environment, health inequities, race/racism, and justice. </p>
@@ -70,82 +71,70 @@
 
 
         <!-- Work content -->
-          <a href="https://www.bostonherald.com/2022/02/25/flingai-racism-in-traffic-stops-is-real-and-the-data-backs-it-up/" class= "workLink" target="_blank">
-            <button type="button" class="selectedWorkEntry allFilter criminalJusticeFilter">
-            <img class="selectedWorkPhoto" src="images/workContent_racism-traffic-stops-op-ed.png" align="left">
-            <p class="selectedWorkEntryTitle">"Racism in Traffic Stops is Real, and the Data Backs It Up"</p>
-            <p class="selectedWorkEntryJob">Op-ed authored for the <i>Boston Herald</i> (for Vera Institute of Justice work)</p>
-            <p class="selectedWorkEntryAdditionalInfo">February 2022</p>
+            <button type="button" class="selectedWorkEntry allFilter criminalJusticeFilter" onclick="window.open('https://www.bostonherald.com/2022/02/25/flingai-racism-in-traffic-stops-is-real-and-the-data-backs-it-up/','_blank')">
+            <img class="selectedWorkPhoto" src="images/workContent_racism-traffic-stops-op-ed.png" alt="Racism in traffic stops photo">
+            <span class="selectedWorkEntryTitle">"Racism in Traffic Stops is Real, and the Data Backs It Up"</span>
+            <span class="selectedWorkEntryJob">Op-ed authored for the <i>Boston Herald</i> (for Vera Institute of Justice work)</span>
+            <span class="selectedWorkEntryAdditionalInfo">February 2022</span>
           </button>
-          </a>
 
-          <a href="https://www.vera.org/news/what-happened-when-boston-stopped-prosecuting-nonviolent-crimes" class= "workLink" target="_blank">
-            <button type="button" class="selectedWorkEntry allFilter criminalJusticeFilter">
-            <img class="selectedWorkPhoto" src="images/workContent_boston-stopped-prosecuting.png" align="left">
-            <p class="selectedWorkEntryTitle">"What Happened When Boston Stopped Prosecuting Nonviolent Crimes"</p>
-            <p class="selectedWorkEntryJob">Blog post authored for the Vera Institute of Justice's <i>Think Justice</i> Blog</p>
-            <p class="selectedWorkEntryCoAuthor">Co-authored with Jamila Hodge</p>
-            <p class="selectedWorkEntryAdditionalInfo">April 2021</p>
+            <button type="button" class="selectedWorkEntry allFilter criminalJusticeFilter" onclick="window.open('https://www.vera.org/news/what-happened-when-boston-stopped-prosecuting-nonviolent-crimes/','_blank')">
+            <img class="selectedWorkPhoto" src="images/workContent_boston-stopped-prosecuting.png" alt="Suffolk misdemeanor nonprosecution photo">
+            <span class="selectedWorkEntryTitle">"What Happened When Boston Stopped Prosecuting Nonviolent Crimes"</span>
+            <span class="selectedWorkEntryJob">Blog post authored for the Vera Institute of Justice's <i>Think Justice</i> Blog</span>
+            <span class="selectedWorkEntryCoAuthor">Co-authored with Jamila Hodge</span>
+            <span class="selectedWorkEntryAdditionalInfo">April 2021</span>
           </button>
-        </a>
 
-        <a href="https://housing-submarkets.mapc.org/submarkets" class= "workLink" target="_blank">
-          <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter">
-          <img class="selectedWorkPhoto" src="images/workContent_mapc-housing-submarkets.png" align="left">
-          <p class="selectedWorkEntryTitle">MAPC Housing Submarkets</p>
-          <p class="selectedWorkEntryJob">Research project for Metropolitan Area Planning Council</p>
-          <p class="selectedWorkEntryCoAuthor">Co-authored with Taylor Perez, Sarah Philbrick, Caitlin Spence, Jessie Partridge Guerrero, and Tim Reardon</p>
-          <p class="selectedWorkEntryAdditionalInfo">February 2021</p>
+          <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter" onclick="window.open('https://housing-submarkets.mapc.org/submarkets/','_blank')">
+          <img class="selectedWorkPhoto" src="images/workContent_mapc-housing-submarkets.png" alt="MAPC housing submarkets photo">
+          <span class="selectedWorkEntryTitle">MAPC Housing Submarkets</span>
+          <span class="selectedWorkEntryJob">Research project for Metropolitan Area Planning Council</span>
+          <span class="selectedWorkEntryCoAuthor">Co-authored with Taylor Perez, Sarah Philbrick, Caitlin Spence, Jessie Partridge Guerrero, and Tim Reardon</span>
+          <span class="selectedWorkEntryAdditionalInfo">February 2021</span>
         </button>
-      </a>
 
-        <a href="https://metrocommon.mapc.org/reports/14" class= "workLink" target="_blank">
-          <button type="button" class="selectedWorkEntry allFilter urbanPlanningFilter laborFilter">
-          <img class="selectedWorkPhoto" src="images/workContent_municipal-workforce.png" align="left">
-          <p class="selectedWorkEntryTitle">The Diversity Deficit: Municipal Employees in Metro Boston</p>
-          <p class="selectedWorkEntryJob">Research report for Metropolitan Area Planning Council</p>
-          <p class="selectedWorkEntryCoAuthor">Co-authored with Tim Reardon, Mark Fine, and Jessie Partridge Guerrero</p>
-          <p class="selectedWorkEntryAdditionalInfo">July 2020</p>
+
+          <button type="button" class="selectedWorkEntry allFilter urbanPlanningFilter laborFilter" onclick="window.open('https://metrocommon.mapc.org/reports/14/','_blank')">
+          <img class="selectedWorkPhoto" src="images/workContent_municipal-workforce.png" alt="Metro Boston municipal workforce photo">
+          <span class="selectedWorkEntryTitle">The spanersity Deficit: Municipal Employees in Metro Boston</span>
+          <span class="selectedWorkEntryJob">Research report for Metropolitan Area Planning Council</span>
+          <span class="selectedWorkEntryCoAuthor">Co-authored with Tim Reardon, Mark Fine, and Jessie Partridge Guerrero</span>
+          <span class="selectedWorkEntryAdditionalInfo">July 2020</span>
         </button>
-      </a>
 
-      <a href="https://metrocommon.mapc.org/reports/21" class= "workLink" target="_blank">
-        <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter">
-        <img class="selectedWorkPhoto" src="images/workContent_mapc-residential-displacement.png" align="left">
-        <p class="selectedWorkEntryTitle">Framework for Residential Displacement Research at MAPC</p>
-        <p class="selectedWorkEntryJob">White paper/literature review authored for the Metropolitan Area Planning Council</p>
-        <p class="selectedWorkEntryAdditionalInfo">January 2020</p>
+
+
+        <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter" onclick="window.open('https://metrocommon.mapc.org/reports/21/','_blank')">
+        <img class="selectedWorkPhoto" src="images/workContent_mapc-residential-displacement.png" alt="Residential displacement framework photo">
+        <span class="selectedWorkEntryTitle">Framework for Residential Displacement Research at MAPC</span>
+        <span class="selectedWorkEntryJob">White paper/literature review authored for the Metropolitan Area Planning Council</span>
+        <span class="selectedWorkEntryAdditionalInfo">January 2020</span>
       </button>
-    </a>
 
-      <a href="https://climate-vulnerability.mapc.org/" class= "workLink" target="_blank">
-        <button type="button" class="selectedWorkEntry allFilter urbanPlanningFilter publicHealthFilter climateFilter">
-        <img class="selectedWorkPhoto" src="images/workContent_mapc-climate-vulnerability.png" align="left">
-        <p class="selectedWorkEntryTitle">Climate Vulnerability in Greater Boston</p>
-        <p class="selectedWorkEntryJob">Research project for Metropolitan Area Planning Council</p>
-        <p class="selectedWorkEntryCoAuthor">Co-authored with Caitlin Spence</p>
-        <p class="selectedWorkEntryAdditionalInfo">December 2019</p>
+
+        <button type="button" class="selectedWorkEntry allFilter urbanPlanningFilter publicHealthFilter climateFilter" onclick="window.open('https://climate-vulnerability.mapc.org/','_blank')">
+        <img class="selectedWorkPhoto" src="images/workContent_mapc-climate-vulnerability.png" alt="Metro Boston climate vulnerability photo">
+        <span class="selectedWorkEntryTitle">Climate Vulnerability in Greater Boston</span>
+        <span class="selectedWorkEntryJob">Research project for Metropolitan Area Planning Council</span>
+        <span class="selectedWorkEntryCoAuthor">Co-authored with Caitlin Spence</span>
+        <span class="selectedWorkEntryAdditionalInfo">December 2019</span>
       </button>
-    </a>
 
-    <a href="http://paa2019.populationassociation.org/uploads/192349" class= "workLink" target="_blank">
-      <button type="button" class="selectedWorkEntry allFilter housingFilter publicHealthFilter">
-      <img class="selectedWorkPhoto" src="images/workContent_eviction-maternal-health.png" align="left">
-      <p class="selectedWorkEntryTitle">Housing, Economic Hardship, and Maternal Depression: A Subgroup Analysis</p>
-      <p class="selectedWorkEntryJob">Conference paper authored for the Population Association of America 2019 Annual Meeting</p>
-      <p class="selectedWorkEntryCoAuthor">Co-authored with Adam Porton and Jinyuan Qi</p>
-      <p class="selectedWorkEntryAdditionalInfo">April 2019</p>
+      <button type="button" class="selectedWorkEntry allFilter housingFilter publicHealthFilter" onclick="window.open('http://paa2019.populationassociation.org/uploads/192349','_blank')">
+      <img class="selectedWorkPhoto" src="images/workContent_eviction-maternal-health.png" alt="Evictions and maternal depression photo">
+      <span class="selectedWorkEntryTitle">Housing, Economic Hardship, and Maternal Depression: A Subgroup Analysis</span>
+      <span class="selectedWorkEntryJob">Conference paper authored for the Population Association of America 2019 Annual Meeting</span>
+      <span class="selectedWorkEntryCoAuthor">Co-authored with Adam Porton and Jinyuan Qi</span>
+      <span class="selectedWorkEntryAdditionalInfo">April 2019</span>
     </button>
-  </a>
 
-  <a href="https://jpia.princeton.edu/sites/g/files/toruqf1661/files/resource-links/jpia_2018.pdf#page=152" class= "workLink" target="_blank">
-    <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter">
-    <img class="selectedWorkPhoto" src="images/workContent_jpia-minneapolis.png" align="left">
-    <p class="selectedWorkEntryTitle">The Missegregation of the Twin Cities</p>
-    <p class="selectedWorkEntryJob">Journal article authored for the Journal of Public and International Affairs (2018 Edition)</p>
-    <p class="selectedWorkEntryAdditionalInfo">October 2018</p>
+    <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter" onclick="window.open('https://jpia.princeton.edu/sites/g/files/toruqf1661/files/resource-links/jpia_2018.pdf#page=152','_blank')">
+    <img class="selectedWorkPhoto" src="images/workContent_jpia-minneapolis.png" alt="Minneapolis missegregation photo">
+    <span class="selectedWorkEntryTitle">The Missegregation of the Twin Cities</span>
+    <span class="selectedWorkEntryJob">Journal article authored for the <i>Journal of Public and International Affairs</i> (2018 Edition)</span>
+    <span class="selectedWorkEntryAdditionalInfo">October 2018</span>
   </button>
-</a>
 
       </section>
 
@@ -227,7 +216,7 @@
            <td>
              Predoctoral Fellow, Perelman School of Medicine at the University of Pennsylvania
              <br>
-             <a href="https://repository.upenn.edu/edissertations/1719/", target="_blank"><i>Dissertation: “Engineered DNA-Mediated Antibody Gene Transfer for Prophylaxis Against Infectious Diseases”</i></a>
+             <a href="https://repository.upenn.edu/edissertations/1719/" target="_blank"><i>Dissertation: “Engineered DNA-Mediated Antibody Gene Transfer for Prophylaxis Against Infectious Diseases”</i></a>
              <br>
              Thesis advisor: <a href="https://wistar.org/our-scientists/david-weiner" target="_blank">David B. Weiner, Ph.D.</a>
            </td>
@@ -298,16 +287,20 @@
              <th class="tableTitle" colspan=2>SKILLS</th>
            </tr>
            <tr>
-           <td><b>Programming:</b></td> <td>R (tidyverse, ggplot2, sp/sf, leaflet), HTML/CSS/JavaScript</td>
+             <td><b>Programming:</b></td> <td>R (tidyverse, ggplot2, sp/sf, leaflet), HTML/CSS/JavaScript</td>
+           </tr>
            <tr>
-           <td><b>Statistics and Data Analysis:</b></td>  <td>Linear and logistic regression, clustering (k-means, k-medoids, factor analysis), descriptive analyses</td>
+             <td><b>Statistics and Data Analysis:</b></td>  <td>Linear and logistic regression, clustering (k-means, k-medoids, factor analysis), descriptive analyses</td>
            </tr>
-           <td><b>Data Visualization:</b></td>  <td>Datawrapper, R (ggplot2), Microsoft Excel, Google Sheets</td>
+           <tr>
+             <td><b>Data Visualization:</b></td>  <td>Datawrapper, R (ggplot2), Microsoft Excel, Google Sheets</td>
            </tr>
-           <td><b>Geospatial Analysis:</b></td>  <td>ArcGIS, R (sp/sf, leaflet)</td>
+           <tr>
+             <td><b>Geospatial Analysis:</b></td>  <td>ArcGIS, R (sp/sf, leaflet)</td>
            </tr>
-           <td><b>Project Management:</b></td>  <td>Project scoping, research design and evaluation</td>
-             </tr>
+           <tr>
+             <td><b>Project Management:</b></td>  <td>Project scoping, research design and evaluation</td>
+           </tr>
          </table>
       </section>
 

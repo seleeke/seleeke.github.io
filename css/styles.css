@@ -81,6 +81,7 @@ button:active {
   #headshot {
     width: 30%;
     padding: 0 0 2% 2%;
+    float: right;
   }
 
   .fa-plus {
@@ -119,9 +120,13 @@ button:active {
 
 @media screen and (min-width: 481px) and (max-width: 799px) {
   main {
-    font-size: 4.8vw;
+    font-size: 6vw;
     display: block;
     margin: 4% 2%;
+  }
+
+  main h1  {
+    font-size: 10vw;
   }
 
   main p {
@@ -133,12 +138,15 @@ button:active {
   }
 
   #headshot {
-    width: 50%;
+    width: 95%;
     padding: 0 0 2% 2%;
   }
+
+
   .fa-plus {
-      font-size: 0.5em;
-      padding: 0.25em;
+      font-size: 0.75em;
+      padding-right: 0.25em;
+      margin: 0;
     }
 
   .fa-brands {
@@ -146,9 +154,10 @@ button:active {
     }
 
   .navButton {
-    display: block;
-    margin: 0 0 0 2%;
-  }
+      font-size: 1.75em;
+      display: block;
+      margin: 0 0 0 2%;
+    }
 
   .subContent {
     padding: 0 5% 0 3%;
@@ -167,13 +176,18 @@ button:active {
     width: 95%;
     margin: 0 auto;
   }
+
+  .filterContainer {
+    width: 95%;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   main {
-    font-size: 4.5vw;
+    font-size: 6vw;
     display: block;
     margin: 2% 1%;
+    background: blue;
   }
 
   main p {
@@ -185,7 +199,7 @@ button:active {
   }
 
   #headshot {
-    width: 100%;
+    width: 85%;
     padding: 0 0 2% 2%;
   }
 
@@ -216,7 +230,7 @@ button:active {
 
   .selectedWorkEntry {
     padding: 15px 2%;
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
   }
 
@@ -331,26 +345,26 @@ transition: background-color 0.25s linear;
 cursor: pointer;
 }
 
-.workLink {
-  text-decoration: none;
-}
-
 .selectedWorkPhoto {
   margin: 0;
   padding: 15px 15px 15px 0;
   width: 25%;
+  float: left;
 }
 
 .selectedWorkEntryTitle {
   font-size: 1.25em;
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 .selectedWorkEntryJob {
   /* font-style: italic; */
   padding-top: 0.25em;
   font-size: 1em;
+  display: block;
+
 }
 
  /*.selectedWorkEntryJob:before{
@@ -361,11 +375,15 @@ cursor: pointer;
    padding-top: 0.25em;
    font-size: 1em;
   font-style: italic;
+  display: block;
+
 }
 
 .selectedWorkEntryAdditionalInfo {
   padding-top: 0.25em;
   font-size: 1em;
+  display: block;
+
 }
 
 .selectedWorkEntryText {
