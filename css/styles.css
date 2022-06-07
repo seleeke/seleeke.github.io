@@ -209,8 +209,9 @@ button:active {
   }
 
   #headshot {
-    width: 85%;
-    padding: 0 0 2% 2%;
+    width: 90%;
+    padding: 0 5% 2% 3%;
+    box-sizing: border-box;
   }
 
   .fa-plus {
@@ -229,13 +230,13 @@ button:active {
 
   .subContent {
     padding: 0 5% 0 3%;
-    font-size: 0.4em;
+    font-size: 0.45em;
     line-height: 130%;
     text-align: justify;
   }
 
   #aboutContent {
-      width: 85%;
+      width: 90%;
     }
 
   .selectedWorkEntry {
@@ -246,6 +247,7 @@ button:active {
 
   .filterContainer {
     width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -313,7 +315,7 @@ section > p:only-child{
 table {
     display: table;
     box-sizing: border-box;
-    margin: 0 10% 2% 0;
+    margin: 0 7.5% 2% 0;
   }
 
 table:first-child {
@@ -345,11 +347,12 @@ td {
   text-decoration: none;
   display: inline-block;
   font-size: 1em;
+  border-bottom: 1px solid #111111;
 }
 
-/* .selectedWorkEntry:first-child {
-  border-top: none;
-} */
+.selectedWorkEntry:last-child {
+  border-bottom: none;
+}
 
 .selectedWorkEntry:hover {
   background-color: #9EBDAE;
