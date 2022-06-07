@@ -475,11 +475,11 @@ footer a:hover {
   }
 
   tr {
-    width: 100;
+    width: 100%;
   }
-  
+
     td {
-      min-width: 75px;
+      min-width: 50px;
     }
 
     .date {
