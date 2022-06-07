@@ -189,10 +189,9 @@ button:active {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   main {
-    font-size: 6vw;
+    font-size: 8vw;
     display: block;
     margin: 2% 1%;
-    background: blue;
   }
 
   main h1  {
@@ -230,7 +229,7 @@ button:active {
 
   .subContent {
     padding: 0 5% 0 3%;
-    font-size: 0.35em;
+    font-size: 0.4em;
     line-height: 130%;
     text-align: justify;
   }
@@ -241,10 +240,13 @@ button:active {
 
   .selectedWorkEntry {
     padding: 15px 2%;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
   }
 
+  .filterContainer {
+    width: 90%;
+  }
 }
 
 /* Section content on-click display classes */
