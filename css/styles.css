@@ -271,10 +271,6 @@ footer a:hover {
     padding: 0;
   }
 
-  main p {
-    margin: 0 0 0 2%;
-  }
-
   div {
     display: block;
   }
@@ -332,10 +328,6 @@ footer a:hover {
     font-size: 10vw;
   }
 
-  main p {
-    margin: 0 0 0 2%;
-  }
-
   div {
     display: block;
   }
@@ -389,7 +381,7 @@ footer a:hover {
   main {
     font-size: 10vw;
     display: block;
-    margin: 2% 1%;
+    margin: 1%;
   }
 
   main h1  {
@@ -398,17 +390,8 @@ footer a:hover {
     font-size: 11vw;
   }
 
-  main p {
-    margin-left: 2%;
-  }
-
   div {
     display: block;
-  }
-
-  #headshot {
-    width: 90%;
-    margin: 0 auto;
   }
 
   .fa-plus {
@@ -437,16 +420,35 @@ footer a:hover {
       margin: 0 auto;
     }
 
+  #headshot {
+      width: 100%;
+    }
+
+.selectedWorkPhoto {
+  display: none;
+}
+
   .selectedWorkEntry {
-    padding: 15px 2%;
+    padding: 15px;
     width: 90%;
     margin: 0 auto;
   }
 
   .filterContainer {
-    padding: 0 2%;
+    padding: 0;
     width: 90%;
     margin: 0 auto;
+  }
+
+  table {
+      display: table;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+  .date {
+    font-weight: 600;
+    min-width: 6rem;
   }
 
   footer {
