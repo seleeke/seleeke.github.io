@@ -450,13 +450,13 @@ footer a:hover {
 
   .selectedWorkEntry {
     padding: 15px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .filterContainer {
     padding: 0;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
