@@ -236,7 +236,9 @@ button:active {
   }
 
   #aboutContent {
+      padding: 0px 2%;
       width: 90%;
+      margin: 0 auto;
     }
 
   .selectedWorkEntry {
@@ -246,6 +248,7 @@ button:active {
   }
 
   .filterContainer {
+    padding: 0 2%;
     width: 90%;
     margin: 0 auto;
   }
