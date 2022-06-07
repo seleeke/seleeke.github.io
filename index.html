@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic website metadata (e.g., site title, description, character encoding, viewport, etc.)-->
+    <meta charset="UTF-8"> <!-- meta tags are used to define metadata for the file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- the viewport meta value determines initial view window attributes. the width=device-width value ensures that the view looks good on mobile devices and desktops (i.e., irrespective of the width of the device or window the site is being viewed on) -->
+    <title>Seleeke Flingai</title> <!-- the title is the name that shows up on the web browser tab -->
+    <meta name="description" content="Seleeke Flingai is a applied quantitative researcher working at the intersection of data and justice."> <!-- the name and content attributes help with search engine optimization on sites like Google -->
+    <meta name="author" content="Seleeke Flingai">
+    <meta name="keywords" content="research, portfolio, data"> <!-- not really used much by search engines anymore, but was used back in the day -->
+
+    <!-- Open Graph meta tags to improve Facebook/Twitter link sharing -->
+    <meta property="og:url" content="insert url here">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Seleeke Flingai">
+    <meta property="og:description" content="Seleeke Flingai is a applied quantitative researcher working at the intersection of data and justice.">
+    <meta property="og:image" content="link to the image you want to use for the facebook/twitter link share">
+
+    <!-- External CSS stylesheet reference link -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Other APIs you wish you connect to (e.g., for webfonts, marketing, etc.)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Sans+Condensed:wght@300;400&family=Libre+Franklin:wght@400;500;600&family=Merriweather+Sans:wght@300;400&family=Quicksand:wght@300;400;500;600&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1556c27737.js" crossorigin="anonymous"></script>
+    <script src="js/js-functions.js"></script>
+  </head>
+
+  <body> <!-- body tag - contains the site main content -->
+
+    <!-- Section tags -->
+    <header>
+    </header> <!-- HTML5 tag that is used for the top of the page -->
+
+    <main>
+      <!-- PAGE HEADER SECTION -->
+      <h1>
+      <p>Seleeke Flingai,</p>
+      <p>Social researcher and data curator,</p>
+      <p>Philadelphia, Pennsylvania</p>
+    </h1>
+
+      <!-- ABOUT SECTION -->
+      <button type="button" class="navButton" onclick="menuOpenClose('aboutContent')"><i class="fa-solid fa-plus"></i>About</button>
+
+      <section class="subContent closed" id="aboutContent">
+        <img id="headshot" src="images/headshot_fixed.jpg" align="right">
+        <p><b>I am a researcher working at the intersection of data, social policy, and justice.</b> Currently, I am a senior research associate with the <a href="https://www.vera.org/people/seleeke-flingai" target="_blank">Reshaping Prosecution</a> program at the <a href="https://www.vera.org/" target="_blank">Vera Institute of Justice</a>. In my research, I use quantitative methods to describe how the criminal legal system in general, and prosecution in particular, have maintained or exacerbated racial inequality in American society. </p>
+        <p>Before joining Vera, I worked as a research analyst at the <a href="https://www.mapc.org/" target="_blank">Metropolitan Area Planning Council</a> (MAPC), the planning agency of the Greater Boston region. At MAPC, I used quantitative and spatial data to investigate the various manifestations of racialized inequities in the Greater Boston region, with a focus on <a href="https://metrocommon.mapc.org/reports/21" target="_blank">residential displacement</a>, <a href="https://housing-submarkets.mapc.org/submarkets" target="_blank">housing markets</a>, and <a href="https://climate-vulnerability.mapc.org/" target="_blank">social vulnerability</a>. </p>
+        <p>Ultimately, I am interested in the relationship between carceral spaces, the built environment, health inequities, race/racism, and justice. </p>
+        <p>I earned my MPA in Domestic Policy (with a certificate in Urban Policy and Planning) in 2018 from <a href="https://spia.princeton.edu/" target="_blank">Princeton University’s School of Public and International Affairs</a>. Before that, I obtained a PhD in Cell and Molecular Biology in 2016 from the <a href="https://www.med.upenn.edu/camb/" target="_blank">University of Pennsylvania’s Perelman School of Medicine</a> and received my S.B. from <a href="https://web.mit.edu/" target="_blank">MIT</a> in 2011, where I majored in Brain and Cognitive Sciences. </p>
+      </section>
+
+      <!-- SELECTED WORK SECTION -->
+      <button type="button" class="navButton" onclick="menuOpenClose('workContent')"><i class="fa-solid fa-plus"></i>Selected Work</button>
+
+      <section class="subContent closed" id="workContent">
+
+        <!-- Work filter menu -->
+        <div class="filterContainer">
+          <button type="button" class="workFilter" onclick="menuFilter('allFilter')">All</button>
+          <button type="button" class="workFilter" onclick="menuFilter('urbanPlanningFilter')">Urban Planning</button>
+          <button type="button" class="workFilter" onclick="menuFilter('housingFilter')">Housing</button>
+          <button type="button" class="workFilter" onclick="menuFilter('criminalJusticeFilter')">Criminal Justice</button>
+          <button type="button" class="workFilter" onclick="menuFilter('publicHealthFilter')">Public Health</button>
+          <!-- <button type="button" class="workFilter" onclick="menuFilter('climateFilter')">Climate</button>
+          <button type="button" class="workFilter" onclick="menuFilter('laborFilter')">Labor</button> -->
+        </div>
+
+
+        <!-- Work content -->
+          <a href="https://www.bostonherald.com/2022/02/25/flingai-racism-in-traffic-stops-is-real-and-the-data-backs-it-up/" class= "workLink" target="_blank">
+            <button type="button" class="selectedWorkEntry allFilter criminalJusticeFilter">
+            <img class="selectedWorkPhoto" src="images/workContent_racism-traffic-stops-op-ed.png" align="left">
+            <p class="selectedWorkEntryTitle">"Racism in Traffic Stops is Real, and the Data Backs It Up"</p>
+            <p class="selectedWorkEntryJob">Op-ed authored for the <i>Boston Herald</i> (for Vera Institute of Justice work)</p>
+            <p class="selectedWorkEntryAdditionalInfo">February 2022</p>
+          </button>
+          </a>
+
+          <a href="https://www.vera.org/news/what-happened-when-boston-stopped-prosecuting-nonviolent-crimes" class= "workLink" target="_blank">
+            <button type="button" class="selectedWorkEntry allFilter criminalJusticeFilter">
+            <img class="selectedWorkPhoto" src="images/workContent_boston-stopped-prosecuting.png" align="left">
+            <p class="selectedWorkEntryTitle">"What Happened When Boston Stopped Prosecuting Nonviolent Crimes"</p>
+            <p class="selectedWorkEntryJob">Blog post authored for the Vera Institute of Justice's <i>Think Justice</i> Blog</p>
+            <p class="selectedWorkEntryCoAuthor">Co-authored with Jamila Hodge</p>
+            <p class="selectedWorkEntryAdditionalInfo">April 2021</p>
+          </button>
+        </a>
+
+        <a href="https://housing-submarkets.mapc.org/submarkets" class= "workLink" target="_blank">
+          <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter">
+          <img class="selectedWorkPhoto" src="images/workContent_mapc-housing-submarkets.png" align="left">
+          <p class="selectedWorkEntryTitle">MAPC Housing Submarkets</p>
+          <p class="selectedWorkEntryJob">Research project for Metropolitan Area Planning Council</p>
+          <p class="selectedWorkEntryCoAuthor">Co-authored with Taylor Perez, Sarah Philbrick, Caitlin Spence, Jessie Partridge Guerrero, and Tim Reardon</p>
+          <p class="selectedWorkEntryAdditionalInfo">February 2021</p>
+        </button>
+      </a>
+
+        <a href="https://metrocommon.mapc.org/reports/14" class= "workLink" target="_blank">
+          <button type="button" class="selectedWorkEntry allFilter urbanPlanningFilter laborFilter">
+          <img class="selectedWorkPhoto" src="images/workContent_municipal-workforce.png" align="left">
+          <p class="selectedWorkEntryTitle">The Diversity Deficit: Municipal Employees in Metro Boston</p>
+          <p class="selectedWorkEntryJob">Research report for Metropolitan Area Planning Council</p>
+          <p class="selectedWorkEntryCoAuthor">Co-authored with Tim Reardon, Mark Fine, and Jessie Partridge Guerrero</p>
+          <p class="selectedWorkEntryAdditionalInfo">July 2020</p>
+        </button>
+      </a>
+
+      <a href="https://metrocommon.mapc.org/reports/21" class= "workLink" target="_blank">
+        <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter">
+        <img class="selectedWorkPhoto" src="images/workContent_mapc-residential-displacement.png" align="left">
+        <p class="selectedWorkEntryTitle">Framework for Residential Displacement Research at MAPC</p>
+        <p class="selectedWorkEntryJob">White paper/literature review authored for the Metropolitan Area Planning Council</p>
+        <p class="selectedWorkEntryAdditionalInfo">January 2020</p>
+      </button>
+    </a>
+
+      <a href="https://climate-vulnerability.mapc.org/" class= "workLink" target="_blank">
+        <button type="button" class="selectedWorkEntry allFilter urbanPlanningFilter publicHealthFilter climateFilter">
+        <img class="selectedWorkPhoto" src="images/workContent_mapc-climate-vulnerability.png" align="left">
+        <p class="selectedWorkEntryTitle">Climate Vulnerability in Greater Boston</p>
+        <p class="selectedWorkEntryJob">Research project for Metropolitan Area Planning Council</p>
+        <p class="selectedWorkEntryCoAuthor">Co-authored with Caitlin Spence</p>
+        <p class="selectedWorkEntryAdditionalInfo">December 2019</p>
+      </button>
+    </a>
+
+    <a href="http://paa2019.populationassociation.org/uploads/192349" class= "workLink" target="_blank">
+      <button type="button" class="selectedWorkEntry allFilter housingFilter publicHealthFilter">
+      <img class="selectedWorkPhoto" src="images/workContent_eviction-maternal-health.png" align="left">
+      <p class="selectedWorkEntryTitle">Housing, Economic Hardship, and Maternal Depression: A Subgroup Analysis</p>
+      <p class="selectedWorkEntryJob">Conference paper authored for the Population Association of America 2019 Annual Meeting</p>
+      <p class="selectedWorkEntryCoAuthor">Co-authored with Adam Porton and Jinyuan Qi</p>
+      <p class="selectedWorkEntryAdditionalInfo">April 2019</p>
+    </button>
+  </a>
+
+  <a href="https://jpia.princeton.edu/sites/g/files/toruqf1661/files/resource-links/jpia_2018.pdf#page=152" class= "workLink" target="_blank">
+    <button type="button" class="selectedWorkEntry allFilter housingFilter urbanPlanningFilter">
+    <img class="selectedWorkPhoto" src="images/workContent_jpia-minneapolis.png" align="left">
+    <p class="selectedWorkEntryTitle">The Missegregation of the Twin Cities</p>
+    <p class="selectedWorkEntryJob">Journal article authored for the Journal of Public and International Affairs (2018 Edition)</p>
+    <p class="selectedWorkEntryAdditionalInfo">October 2018</p>
+  </button>
+</a>
+
+      </section>
+
+      <!-- RESUME SECTION -->
+      <button type="button" class="navButton" onclick="menuOpenClose('resumeContent')"><i class="fa-solid fa-plus"></i>Resume</button>
+
+      <section class="subContent closed" id="resumeContent">
+         <table>
+           <tr>
+             <th class="tableTitle" colspan=2>EDUCATION</th>
+           </tr>
+           <tr>
+             <td class="date">2016 - 2018 </td>
+             <td>
+               Princeton University, School of Public and International Affairs
+               <br>
+               MPA, Domestic Policy
+               <br>
+               <i>Certificate in Urban Policy and Planning</i>
+             </td>
+           </tr>
+           <tr>
+             <td class="date">2011 - 2016</td>
+             <td>
+               University of Pennsylvania, Perelman School of Medicine
+               <br>
+               PhD, Cellular and Molecular Biology
+               <br>
+               <i>Certificate in Public Health</i>
+             </td>
+           </tr>
+
+           <tr>
+             <td class="date">2007 - 2011</td>
+             <td>
+               Massachusetts Institute of Technology
+               <br>
+               S.B., Brain and Cognitive Sciences
+             </td>
+           </tr>
+
+       </table>
+
+         <table>
+           <tr>
+             <th class="tableTitle" colspan=2>PROFESSIONAL EXPERIENCE</th>
+           </tr>
+           <tr>
+             <td class="date">2022 - </td>
+             <td>Senior Research Associate, Vera Institute of Justice, Brooklyn, NY</td>
+           </tr>
+           <tr>
+             <td class="date">2020 - 2022</td>
+             <td>Research Associate II, Vera Institute of Justice, Brooklyn, NY</td>
+           </tr>
+
+           <tr>
+             <td class="date">2018 - 2020</td>
+             <td>Research Analyst II, Metropolitan Area Planning Council, Boston, MA</td>
+           </tr>
+
+           <tr>
+             <td class="date">2017 - 2018</td>
+             <td>Public Health Intern, Metropolitan Area Planning Council, Boston, MA</td>
+           </tr>
+
+           <tr>
+             <td class="date">2013 - 2015</td>
+             <td>Project Consultant - Monitoring and Evaluation, Energize the Chain, Philadelphia, PA</td>
+           </tr>
+         </table>
+
+         <table>
+           <tr>
+             <th class="tableTitle" colspan=2>ACADEMIC EXPERIENCE</th>
+           </tr>
+         <tr>
+           <td class="date">2011 - 2016</td>
+           <td>
+             Predoctoral Fellow, Perelman School of Medicine at the University of Pennsylvania
+             <br>
+             <a href="https://repository.upenn.edu/edissertations/1719/", target="_blank"><i>Dissertation: “Engineered DNA-Mediated Antibody Gene Transfer for Prophylaxis Against Infectious Diseases”</i></a>
+             <br>
+             Thesis advisor: <a href="https://wistar.org/our-scientists/david-weiner" target="_blank">David B. Weiner, Ph.D.</a>
+           </td>
+         </tr>
+
+         <tr>
+          <td class="date">2010 - 2011</td>
+          <td>
+            Research Assistant, Massachusetts Institute of Technology
+            <br>
+            Departments of Bioengineering and Material Science Engineering
+            <br>
+            Principal Investigator: <a href="https://be.mit.edu/directory/darrell-j-irvine" target="_blank">Darrell Irvine, PhD</a>
+          </td>
+         </tr>
+
+         <tr>
+          <td class="date">2010</td>
+          <td>
+            <a href="https://college.mayo.edu/academics/biomedical-research-training/summer-undergraduate-research-fellowship-surf/" target="_blank">Summer Undergraduate Research Fellow, Mayo Clinic Jacksonville</a>
+            <br>
+            Principal Investigator: <a href="https://www.mayo.edu/research/faculty/ertekin-taner-nilufer-m-d-ph-d/bio-00027318" target="_blank">Nilufer Ertekin-Taner, MD, PhD</a>
+          </td>
+         </tr>
+
+         <tr>
+          <td class="date">2008 - 2010</td>
+          <td>
+          Research Assistant, Massachusetts Institute of Technology
+          <br>
+          Department of Brain and Cognitive Sciences
+          <br>
+          Principal Investigator: <a href="https://seunglab.org/" target="_blank">H. Sebastian Seung, PhD</a>
+         </td>
+         </tr>
+       </table>
+
+         <table>
+           <tr>
+             <th class="tableTitle" colspan=2>LEADERSHIP</th>
+           </tr>
+           <tr>
+             <td class="date">2021</td>
+             <td>Member, Black Verans Council, Vera Institute of Justice</td>
+           </tr>
+           <tr>
+             <td class="date">2019 - 2020</td>
+             <td>Member, Equity Team, Metropolitan Area Planning Council</td>
+           </tr>
+
+           <tr>
+             <td class="date">2017 - 2018</td>
+             <td>Co-Chair, <a href="https://saoc.princeton.edu/" target="_blank">Students and Alumni of Color</a>,
+               <br>Princeton University School of Public and International Affairs</td>
+           </tr>
+
+           <tr>
+             <td class="date">2017</td>
+             <td>Student Co-Representative, Domestic Policy field,
+               <br>
+               Princeton University Policy Student Government</td>
+           </tr>
+
+         </table>
+
+         <table>
+           <tr>
+             <th class="tableTitle" colspan=2>SKILLS</th>
+           </tr>
+           <tr>
+           <td><b>Programming:</b></td> <td>R (tidyverse, ggplot2, sp/sf, leaflet), HTML/CSS/JavaScript</td>
+           <tr>
+           <td><b>Statistics and Data Analysis:</b></td>  <td>Linear and logistic regression, clustering (k-means, k-medoids, factor analysis), descriptive analyses</td>
+           </tr>
+           <td><b>Data Visualization:</b></td>  <td>Datawrapper, R (ggplot2), Microsoft Excel, Google Sheets</td>
+           </tr>
+           <td><b>Geospatial Analysis:</b></td>  <td>ArcGIS, R (sp/sf, leaflet)</td>
+           </tr>
+           <td><b>Project Management:</b></td>  <td>Project scoping, research design and evaluation</td>
+             </tr>
+         </table>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <button type="button" class="navButton" onclick="menuOpenClose('contactContent')"><i class="fa-solid fa-plus"></i>Contact</button>
+
+      <section class="subContent closed" id="contactContent">
+         <a href="mailto:seleeke@gmail.com" target="_blank">Email</a>
+         <br>
+         <a href="https://www.linkedin.com/in/seleekeflingai/" target="_blank">LinkedIn</a>
+         <br>
+         <a href="https://github.com/seleeke" target="_blank">GitHub</a>
+      </section>
+
+      </main>
+
+    <footer>
+    <a href="mailto:seleeke@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+    <br>
+    <a href="https://www.linkedin.com/in/seleekeflingai/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+    <br>
+    <a href="https://github.com/seleeke" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+
+  </footer> <!-- Typically at the bottom of the page, but not required -->
+
+  </body>
+</html>

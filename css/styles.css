@@ -1,0 +1,421 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #F4F0EC;
+}
+
+main {
+  height: 95%;
+  /* font-family: 'Arimo', sans-serif; */
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Roboto Flex', sans-serif; */
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+main p, .navButton, .fa-brands {
+  color: #111111;
+  }
+
+main h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: inherit;
+}
+
+section .subContent, .navButton, .selectedWorkEntry {
+  /* font-family: 'Arimo', sans-serif; */
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Roboto Flex', sans-serif; */
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+}
+
+/* main page menu headers "buttons" */
+button {
+  border: none;
+  font-size: 1em;
+  display: block;
+  background: #F4F0EC;
+}
+
+.navButton {
+    text-decoration: none;
+    transition: color 0.25s linear;
+  }
+
+
+button:hover {
+  transition: color 0.25s linear;
+  color: #9EBDAE;
+}
+
+button:active {
+  color: #9EBDAE;
+}
+
+
+/* responsive design code */
+@media screen and (min-width: 800px) {
+  main {
+    font-size: 4.8vw;
+    display: block;
+    margin: 2% 1%;
+  }
+
+  main p {
+    margin: 0 0 0 2%;
+  }
+
+  div {
+    display: block;
+  }
+
+  #headshot {
+    width: 30%;
+    padding: 0 0 2% 2%;
+  }
+
+  .fa-plus {
+      font-size: 0.5em;
+      padding: 0.25em;
+    }
+
+  .fa-brands {
+      font-size: 0.5em;
+    }
+
+  .navButton {
+    display: block;
+    margin: 0 2% 0 2%;
+  }
+
+  .subContent {
+    padding: 0 5% 0 3%;
+    font-size: 0.35em;
+    line-height: 130%;
+    text-align: justify;
+  }
+
+#aboutContent {
+  width: 92.5%;
+}
+
+  .selectedWorkEntry {
+    /*padding: 15px 32px;*/
+    padding: 15px 2%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 799px) {
+  main {
+    font-size: 4.8vw;
+    display: block;
+    margin: 4% 2%;
+  }
+
+  main p {
+    margin: 0 0 0 2%;
+  }
+
+  div {
+    display: block;
+  }
+
+  #headshot {
+    width: 50%;
+    padding: 0 0 2% 2%;
+  }
+  .fa-plus {
+      font-size: 0.5em;
+      padding: 0.25em;
+    }
+
+  .fa-brands {
+      font-size: 0.5em;
+    }
+
+  .navButton {
+    display: block;
+    margin: 0 0 0 2%;
+  }
+
+  .subContent {
+    padding: 0 5% 0 3%;
+    font-size: 0.7em;
+    line-height: 130%;
+    text-align: justify;
+  }
+
+  #aboutContent {
+    width: 85%;
+  }
+
+  .selectedWorkEntry {
+    /*padding: 15px 32px;*/
+    padding: 15px 2%;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  main {
+    font-size: 4.5vw;
+    display: block;
+    margin: 2% 1%;
+  }
+
+  main p {
+    margin: 0 0 0 2%;
+  }
+
+  div {
+    display: block;
+  }
+
+  #headshot {
+    width: 100%;
+    padding: 0 0 2% 2%;
+  }
+
+  .fa-plus {
+      font-size: 0.5em;
+      padding: 0.25em;
+    }
+
+  .fa-brands {
+      font-size: 0.5em;
+    }
+
+  .navButton {
+    display: block;
+    margin: 0 0 0 2%;
+  }
+
+  .subContent {
+    padding: 0 5% 0 3%;
+    font-size: 0.35em;
+    line-height: 130%;
+    text-align: justify;
+  }
+
+  #aboutContent {
+      width: 85%;
+    }
+
+  .selectedWorkEntry {
+    padding: 15px 2%;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+}
+
+/* Section content on-click display classes */
+.closed {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+
+section > p {
+  margin: 0.25em 0 0.5em 0;
+}
+
+section > p:last-child{
+ margin: 0 0 0.25em 0;
+}
+
+section > p:only-child{
+ margin: 0.25em 0 0.25em 0;
+}
+
+#aboutContent a {
+  color: #111111;
+  transition: color 0.1s linear;
+}
+
+#aboutContent a:hover {
+  color: #9EBDAE;
+  transition: color 0.1s linear;
+}
+
+#resumeContent a {
+  color: #111111;
+}
+
+#resumeContent a:visited {
+  color: #111111;
+}
+
+#resumeContent a:hover {
+  color: #9EBDAE;
+  transition: color 0.1s linear;
+}
+
+#contactContent a {
+  display: inline-block;
+  width: auto;
+  color: #111111;
+}
+
+#contactContent a:visited {
+  color: #111111;
+}
+
+#contactContent a:hover {
+  color: #9EBDAE;
+  transition: color 0.1s linear;
+}
+
+/* tables */
+table {
+    display: table;
+    box-sizing: border-box;
+    margin: 0 10% 2% 0;
+  }
+
+table:first-child {
+  margin-top: 1%;
+}
+
+td {
+  padding: 5px 20px 5px 0;
+  vertical-align: text-top;
+  text-align: left;
+  width: auto;
+}
+
+.tableTitle{
+  font-weight: 600;
+}
+
+.date {
+  font-weight: 600;
+  max-width: 180px;
+}
+
+/* Selected work styling */
+/* main page menu headers "buttons" */
+.selectedWorkEntry {
+  background-color: #F4F0EC;
+  color: #111111;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+}
+
+/* .selectedWorkEntry:first-child {
+  border-top: none;
+} */
+
+.selectedWorkEntry:hover {
+  background-color: #9EBDAE;
+  color: #111111;
+transition: background-color 0.25s linear;
+cursor: pointer;
+}
+
+.workLink {
+  text-decoration: none;
+}
+
+.selectedWorkPhoto {
+  margin: 0;
+  padding: 15px 15px 15px 0;
+  width: 25%;
+}
+
+.selectedWorkEntryTitle {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+.selectedWorkEntryJob {
+  /* font-style: italic; */
+  padding-top: 0.25em;
+  font-size: 1em;
+}
+
+ /*.selectedWorkEntryJob:before{
+  content: "Employer: "
+} */
+
+.selectedWorkEntryCoAuthor {
+   padding-top: 0.25em;
+   font-size: 1em;
+  font-style: italic;
+}
+
+.selectedWorkEntryAdditionalInfo {
+  padding-top: 0.25em;
+  font-size: 1em;
+}
+
+.selectedWorkEntryText {
+  font-size: 0.75em;
+  padding-top: 2em;
+}
+
+/* Selected Work Filter Menu */
+.filterContainer {
+  display: flex;
+  margin-top: 0.5em;
+  flex-wrap: wrap;
+}
+
+.workFilter {
+  border: 1px solid #111111;
+  padding: 0.5em 2em;
+  margin: 0;
+  flex: 1 1 auto;
+  font-size: 0.75em;
+}
+
+.workFilter:hover {
+  border: 1px solid #111111;
+  background: #9EBDAE;
+  color: #111111;
+}
+
+
+/* Footer */
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 1% 2% 0;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  width: auto;
+  margin: 10px 10px;
+  color: #111111;
+}
+
+footer a:visited {
+  color: #111111;
+}
+
+footer a:hover {
+  transition: color 0.25s linear;
+  color: #9EBDAE;
+}
