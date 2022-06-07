@@ -444,6 +444,11 @@ footer a:hover {
       width: 100%;
     }
 
+  #workContent {
+      width: 90%;
+      margin: 0 auto;
+    }
+
 .selectedWorkPhoto {
   display: none;
 }
@@ -459,6 +464,11 @@ footer a:hover {
     width: 100%;
     margin: 0 auto;
   }
+
+  #resumeContent {
+      width: 90%;
+      margin: 0 auto;
+    }
 
   table {
     width: 100%;
