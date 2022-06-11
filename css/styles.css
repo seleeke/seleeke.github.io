@@ -340,6 +340,10 @@ footer a:hover {
     font-weight: 600;
   }
 
+#contactContent > a {
+  font-size: 0.8em;
+}
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 799px) {
@@ -415,6 +419,10 @@ footer a:hover {
 
     .date {
       font-weight: 600;
+    }
+
+    #contactContent > a {
+      font-size: 0.8em;
     }
 }
 
