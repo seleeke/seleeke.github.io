@@ -60,11 +60,11 @@
 
         <!-- Work filter menu -->
         <div class="filterContainer">
-          <button type="button" class="workFilter" onclick="menuFilter('allFilter')">All</button>
-          <button type="button" class="workFilter" onclick="menuFilter('urbanPlanningFilter')">Urban Planning</button>
-          <button type="button" class="workFilter" onclick="menuFilter('housingFilter')">Housing</button>
-          <button type="button" class="workFilter" onclick="menuFilter('criminalJusticeFilter')">Criminal Justice</button>
-          <button type="button" class="workFilter" onclick="menuFilter('publicHealthFilter')">Public Health</button>
+          <button type="button" class="workFilter activeButton" id="allFilterButton" onclick="menuFilter('allFilter'); menuActive('allFilterButton')">All</button>
+          <button type="button" class="workFilter inactiveButton" id="urbanPlanningFilterButton" onclick="menuFilter('urbanPlanningFilter'); menuActive('urbanPlanningFilterButton')">Urban Planning</button>
+          <button type="button" class="workFilter inactiveButton" id="housingFilterButton" onclick="menuFilter('housingFilter'); menuActive('housingFilterButton')">Housing</button>
+          <button type="button" class="workFilter inactiveButton" id="criminalJusticeFilterButton" onclick="menuFilter('criminalJusticeFilter'); menuActive('criminalJusticeFilterButton')">Criminal Justice</button>
+          <button type="button" class="workFilter inactiveButton" id="publicHealthFilterButton" onclick="menuFilter('publicHealthFilter'); menuActive('publicHealthFilterButton')">Public Health</button>
           <!-- <button type="button" class="workFilter" onclick="menuFilter('climateFilter')">Climate</button>
           <button type="button" class="workFilter" onclick="menuFilter('laborFilter')">Labor</button> -->
         </div>

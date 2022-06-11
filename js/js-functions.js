@@ -9,6 +9,7 @@ function menuOpenClose(par) {
   x = document.getElementById(par);
 
   // get the elements of IDs that are not clicked on -- use querySelectorAll
+  // Here, we're creating an array named "id" that takes all of the individual ids in otherSections and forms them into an array, separating them with a comma via the join method.
   y = document.querySelectorAll(
     otherSections.map(id => `#${id}`).join(', ')
   );
@@ -46,4 +47,38 @@ function menuFilter(par) {
      x[i].style.display = "block";
    }
  }
+}
+
+// Function to filter the work content items by category on click
+function menuActive(par) {
+  var clickedFilterButton = par;
+  const filterButtons = ["allFilterButton", "urbanPlanningFilterButton", "housingFilterButton", "criminalJusticeFilterButton", "publicHealthFilterButton"];
+  var otherFilterButtons = filterButtons.filter(function(value, index, arr){
+      return value != clickedFilterButton;
+  });
+
+  x = document.getElementById(par);
+
+  // get the elements of IDs that are not clicked on -- use querySelectorAll
+  // Here, we're creating an array named "id" that takes all of the individual ids in otherSections and forms them into an array, separating them with a comma via the join method.
+  y = document.querySelectorAll(
+    otherFilterButtons.map(id => `#${id}`).join(', ')
+  );
+
+  if (x.className == "workFilter inactiveButton") {
+    x.className = "workFilter activeButton";
+    y[0].className = "workFilter inactiveButton";
+    y[1].className = "workFilter inactiveButton";
+    y[2].className = "workFilter inactiveButton";
+    y[3].className = "workFilter inactiveButton";
+
+  }
+  else {
+    x.className = "workFilter activeButton";
+    y[0].className = "workFilter inactiveButton";
+    y[1].className = "workFilter inactiveButton";
+    y[2].className = "workFilter inactiveButton";
+    y[3].className = "workFilter inactiveButton";
+
+  }
 }

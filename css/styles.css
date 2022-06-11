@@ -139,6 +139,14 @@ button:active {
   color: #111111;
 }
 
+.activeButton {
+  background: #9EBDAE;
+}
+
+.inactiveButton {
+  background: #F4F0EC;
+}
+
 /* main page menu headers "buttons" */
 .selectedWorkEntry {
   background-color: #F4F0EC;
