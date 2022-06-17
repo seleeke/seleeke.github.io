@@ -46,9 +46,30 @@ button {
 
 .navButton {
     text-decoration: none;
-    transition: color 0.25s linear;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
 
+.resumeDownloadContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.resumeButton {
+  flex: 0 1 auto;
+  border: 1px solid #111111;
+  padding: 0.4em;
+  border-radius: 3px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.resumeButton:hover {
+  border: 1px solid #111111;
+  border-radius: 3px;
+  background-color: #9EBDAE;
+  color: #111111;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 button:hover {
   transition: color 0.25s linear;
@@ -80,12 +101,12 @@ button:active {
 /* Link styling */
 #aboutContent a {
   color: #111111;
-  transition: color 0.1s linear;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 #aboutContent a:hover {
   color: #9EBDAE;
-  transition: color 0.1s linear;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 #resumeContent a {
@@ -98,7 +119,7 @@ button:active {
 
 #resumeContent a:hover {
   color: #9EBDAE;
-  transition: color 0.1s linear;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 #contactContent a {
@@ -113,7 +134,7 @@ button:active {
 
 #contactContent a:hover {
   color: #9EBDAE;
-  transition: color 0.1s linear;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 
@@ -131,12 +152,14 @@ button:active {
   margin: 0;
   flex: 1 1 auto;
   font-size: 0.75em;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .workFilter:hover {
   border: 1px solid #111111;
   background: #9EBDAE;
   color: #111111;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .activeButton {
@@ -165,7 +188,8 @@ button:active {
 .selectedWorkEntry:hover {
   background-color: #9EBDAE;
   color: #111111;
-transition: background-color 0.25s linear;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
 cursor: pointer;
 }
 
@@ -214,8 +238,12 @@ cursor: pointer;
 
 
 /* tables */
+.resumeTable{
+  display: block;
+}
+
 table {
-    display: table;
+    display: block;
     box-sizing: border-box;
     margin: 0 7.5% 2% 0;
   }
@@ -261,7 +289,7 @@ footer a:visited {
 }
 
 footer a:hover {
-  transition: color 0.25s linear;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   color: #9EBDAE;
 }
 
@@ -336,8 +364,13 @@ footer a:hover {
     min-width: 125px;
   }
 
-  .date {
-    font-weight: 600;
+.resumeDownloadContainer {
+    display: block;
+  }
+
+  .resumeButton {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
   }
 
 #contactContent > a {
@@ -407,6 +440,14 @@ footer a:hover {
 
   .filterContainer {
     width: 95%;
+  }
+
+  .resumeDownloadContainer{
+    width: 100%;
+  }
+
+  .resumeButton {
+    margin: 10px 10px 10px 0;
   }
 
   table {
