@@ -36,6 +36,10 @@ section .subContent, .navButton, .selectedWorkEntry {
   font-weight: 300;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 /* main page menu headers "buttons" */
 button {
   border: none;
