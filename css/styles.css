@@ -48,6 +48,15 @@ button {
   background: #F4F0EC;
 }
 
+.bullet-list-minimal {
+  padding: 0 initial;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
 .navButton {
     text-decoration: none;
       transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
